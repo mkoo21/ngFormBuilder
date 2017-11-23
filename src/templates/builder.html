@@ -10,7 +10,7 @@
                                                                                                      dnd-dragend="dndDragIframeWorkaround.isDragging = false"
                                                                                                      dnd-effect-allowed="copy"
                                                                                                      class="formcomponentcontainer">
-                            <span class="btn btn-danger btn-xs btn-block formcomponent" title="{{ component.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;">
+                            <span class="btn btn-danger btn-xs formcomponent" title="{{ component.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;">
                                 <i ng-if="component.icon" class="{{ component.icon }}"></i> {{ component.title | formioTranslate }}
                             </span>
                         </div>
@@ -22,7 +22,7 @@
                                                                                dnd-dragend="dndDragIframeWorkaround.isDragging = false"
                                                                                dnd-effect-allowed="copy"
                                                                                class="formcomponentcontainer">
-                    <span class="btn btn-danger btn-xs btn-block formcomponent" title="{{ component.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;">
+                    <span class="btn btn-danger btn-xs formcomponent" title="{{ component.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;">
                         <i ng-if="component.icon" class="{{ component.icon }}"></i> {{ component.title | formioTranslate }}
                     </span>
                 </div>
@@ -31,7 +31,7 @@
         <uib-accordion close-others="true" ng-if="form.display === 'pdf'">
             <div uib-accordion-group heading="{{ 'PDF Fields' | formioTranslate }}" is-open="true" class="panel panel-default form-builder-panel">
                 <div class="formcomponentcontainer" ng-repeat="pdftype in pdftypes">
-                    <span class="btn btn-danger btn-xs btn-block formcomponent" title="{{ pdftype.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;" form-builder-draggable="pdftype">
+                    <span class="btn btn-danger btn-xs formcomponent" title="{{ pdftype.title | formioTranslate }}" style="overflow: hidden; text-overflow: ellipsis;" form-builder-draggable="pdftype">
                         <i ng-if="pdftype.icon" class="{{ pdftype.icon }}"></i> {{ pdftype.title | formioTranslate }}
                     </span>
                 </div>
